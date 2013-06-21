@@ -229,7 +229,42 @@ Updates an exisitng pharmacist.
     }
 ------------------------------
 
+##Physician
 
+    GET http://emrservice.ironfoundry.me/PatientService.svc/physician
+
+Returns a list of all physicians.
+
+    GET http://emrservice.ironfoundry.me/PatientService.svc/physician/{PhysicianId}
+
+Returns a single physician.
+
+    POST http://emrservice.ironfoundry.me/PatientService.svc/physician
+
+Create a new physician.
+
+    PUT http://emrservice.ironfoundry.me/PatientService.svc/physician
+
+Update an existing physician
+
+###Sample JSON Data
+
+    {
+       "PhoneNumber": null,
+       "PhysicianAddress": null,
+       "PhysicianName": null,
+       "Speciality": "test"
+    }
+
+###Sample Response JSON Data
+
+    {
+       "Id": "c55f61a5-bc45-4b49-bd25-d874d10ae2be",
+       "PhoneNumber": null,
+       "PhysicianAddress": null,
+       "PhysicianName": null,
+       "Speciality": "test"
+   }
 
 
 
