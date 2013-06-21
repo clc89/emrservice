@@ -47,11 +47,10 @@ Creates a patient record
 
 Updates a patient record.
 
-###Sample JSON
-
+###Sample JSON Data
 
     {
-       "Allergies": null,
+       "Allergies": ['test', 'test'],
        "BillingAddress": null,
        "CurrentTabaccoUse": false,
        "DOB": null,
@@ -63,7 +62,6 @@ Updates a patient record.
        "EveningNumber": null,
        "FamilyHistory": null,
        "FamilyPhysician": null,
-       "Id": "f032dbf0-24eb-436d-8686-214224373878",
        "Immunizations": null,
        "LegalGuardian": null,
        "ListOfPhysicians": null,
@@ -77,4 +75,76 @@ Updates a patient record.
        "SocialSecurityNumber": null
     }
 
- 
+###Sample Response JSON Data
+
+    {
+       "Id": "f032dbf0-24eb-436d-8686-214224373878",
+       "Allergies": null,
+       "BillingAddress": null,
+       "CurrentTabaccoUse": false,
+       "DOB": null,
+       "DaytimeNumber": null,
+       "DrugHistory": null,
+       "Email": null,
+       "EmergencyContact": null,
+       "Ethnicity": null,
+       "EveningNumber": null,
+       "FamilyHistory": null,
+       "FamilyPhysician": null,
+       "Immunizations": null,
+       "LegalGuardian": null,
+       "ListOfPhysicians": null,
+       "ListOfPrescriptions": null,
+       "ListOfProviders": null,
+       "MaritalStatus": null,
+       "PastTabaccoUse": false,
+       "PatientName": null,
+       "PhysicalAddress": null,
+       "SexualOrientation": null,
+       "SocialSecurityNumber": null
+    }
+
+----------------------------------
+##Patient Visit Record
+
+    GET http://emrservice.ironfoundry.me/PatientService.svc/patientrecord/{PatientID}/pvr
+
+Returns a list of patient visit records for a patient.
+
+    POST http://emrservice.ironfoundry.me/PatientService.svc/patientrecord/{PatientID}/pvr
+
+Creates a patient visit record for patient.
+
+###Sample JSON Data
+
+    {
+       "BloodPressure": 0,
+       "CourseOfTreatment": null,
+       "Date": "1/1/1991",
+       "HeartRate": 0,
+       "Height": 0,
+       "Symptoms": null,
+       "Temperature": 0,
+       "Weight": 0,
+       "notes": null,
+       "resonForVist": null
+   }
+
+###Sample Response JSON Data
+
+    {
+       "BloodPressure": 0,
+       "CourseOfTreatment": null,
+       "Date": "1/1/1991",
+       "HeartRate": 0,
+       "Height": 0,
+       "Id": "416f5865-7038-4387-83b7-a0890a8b9446",
+       "Symptoms": null,
+       "Temperature": 0,
+       "Weight": 0,
+       "notes": null,
+       "patientId": "f032dbf0-24eb-436d-8686-214224373878",
+       "resonForVist": null
+   }
+
+--------------------------------------- 
