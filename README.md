@@ -185,5 +185,5 @@ Creates a new insurance provider
        "GroupPolicy": "true?",
        "Id": "9947a857-0dd4-4d15-b61a-7a4f3f830326",
        "PolicyHolderID": "30"
-   }
+    }
 ----------------------------------------------------
