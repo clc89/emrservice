@@ -1,0 +1,7 @@
+        public EmailRestResult Get(Guid id)
+        {
+            var request = new RestRequest();
+            request.Resource = "emails/" + id;
+            request.Method = Method.GET;
+            return Execute<EmailRestResult>(request);
+        }

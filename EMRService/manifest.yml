@@ -1,0 +1,13 @@
+---
+applications:
+  .:
+    name: emrservice
+    framework:
+      name: aspdotnet
+      info:
+        mem: 64M
+        description: ASP.NET 4.0 Application
+        exec: 
+    url: ${name}.${target-base}
+    mem: 64M
+    instances: 1

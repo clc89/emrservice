@@ -1,0 +1,27 @@
+        public EmailRestResult Send(EmailModel model)
+        {
+            var request = new RestRequest();
+            request.Resource = "emails";
+            request.Method = Method.POST;
+
+            request.AddParameter("from", model.from);
+            request.AddParameter("subject", model.subject);
+            request.AddParameter("body", model.body);
+
+            for (int i = 0; i < model.to.Count; i++)
+            {
+                request.AddParameter(string.Format("to[{0}]", i), model.to[i]);
+            }
+
+            for (int i = 0; i < model.cc.Count; i++)
+            {
+                request.AddParameter(string.Format("cc[{0}]", i), model.cc[i]);
+            }
+
+            for (int i = 0; i < model.bcc.Count; i++)
+            {
+                request.AddParameter(string.Format("bcc[{0}]", i), model.bcc[i]);
+            }
+
+            return Execute<EmailRestResult>(request);
+        }

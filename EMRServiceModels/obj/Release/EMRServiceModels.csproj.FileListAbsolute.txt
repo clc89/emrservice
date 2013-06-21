@@ -1,0 +1,8 @@
+C:\Users\workVM\Documents\CloudIIProject\EMRService\EMRServiceModels\bin\Release\EMRServiceModels.dll
+C:\Users\workVM\Documents\CloudIIProject\EMRService\EMRServiceModels\bin\Release\EMRServiceModels.pdb
+C:\Users\workVM\Documents\CloudIIProject\EMRService\EMRServiceModels\bin\Release\MongoDB.Bson.dll
+C:\Users\workVM\Documents\CloudIIProject\EMRService\EMRServiceModels\bin\Release\MongoDB.Driver.dll
+C:\Users\workVM\Documents\CloudIIProject\EMRService\EMRServiceModels\bin\Release\MongoDB.Bson.xml
+C:\Users\workVM\Documents\CloudIIProject\EMRService\EMRServiceModels\bin\Release\MongoDB.Driver.xml
+C:\Users\workVM\Documents\CloudIIProject\EMRService\EMRServiceModels\obj\Release\EMRServiceModels.dll
+C:\Users\workVM\Documents\CloudIIProject\EMRService\EMRServiceModels\obj\Release\EMRServiceModels.pdb
