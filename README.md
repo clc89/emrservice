@@ -105,6 +105,7 @@ Updates a patient record.
     }
 
 ----------------------------------
+
 ##Patient Visit Record
 
     GET http://emrservice.ironfoundry.me/PatientService.svc/patientrecord/{PatientID}/pvr
@@ -148,3 +149,41 @@ Creates a patient visit record for patient.
    }
 
 --------------------------------------- 
+
+##Insurance
+
+    GET http://emrservice.ironfoundry.me/PatientService.svc/insurance
+
+Returns a list of all insurance providers.
+
+    GET http://emrservice.ironfoundry.me/PatientService.svc/insurance/{InsuranceId}
+
+Returns data for a single insurance provider.
+
+    POST http://emrservice.ironfoundry.me/PatientService.svc/insurance
+
+Creates a new insurance provider
+
+    PUT http://emrservice.ironfoundry.me/PatientService.svc/insurance
+
+###Sample JSON Data
+
+    {
+       "BillingAddress": null,
+       "CompanyName": "testInsurance4",
+       "ContactNumber": "111-111-1113",
+       "GroupPolicy": "true",
+       "PolicyHolderID": "30"
+   }
+
+###Sample Response JSON Data
+
+    {
+       "BillingAddress": null,
+       "CompanyName": "testInsurance4",
+       "ContactNumber": "111-111-1113",
+       "GroupPolicy": "true?",
+       "Id": "9947a857-0dd4-4d15-b61a-7a4f3f830326",
+       "PolicyHolderID": "30"
+   }
+----------------------------------------------------
