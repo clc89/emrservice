@@ -27,6 +27,13 @@ This is a simple RESTful api for patient medical data.
 
   *http://emrservice.ironfoundry.me/PatientService.svc/physician
 
+#API Key
+---------
+
+This API key gives access to all operations.  For all api calls you must set a custom http header called "key" using this api key
+
+        f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+
 
 #Supported Operations
 ---------
@@ -166,6 +173,8 @@ Creates a new insurance provider
 
     PUT http://emrservice.ironfoundry.me/PatientService.svc/insurance
 
+Updates an exisiting insurance provider.
+
 ###Sample JSON Data
 
     {
@@ -187,3 +196,41 @@ Creates a new insurance provider
        "PolicyHolderID": "30"
     }
 ----------------------------------------------------
+
+##Pharmacist
+
+    GET http://emrservice.ironfoundry.me/PatientService.svc/pharmacist/{PharmacistId}
+
+Returns a single pharmacist.
+
+    POST http://emrservice.ironfoundry.me/PatientService.svc/pharmacist
+
+Creates a pharmacist
+
+    PUT http://emrservice.ironfoundry.me/PatientService.svc/pharmacist
+
+Updates an exisitng pharmacist.
+
+###Sample JSON Data
+
+    {
+       "PharmacistAddress": null,
+       "PharmacistName": null,
+       "PhoneNumber": null
+    }
+
+###Sample Response JSON Data
+
+    {
+       "Id": "f991f1a3-b204-484b-9261-ddcb5b54ea33",
+       "PharmacistAddress": null,
+       "PharmacistName": null,
+       "PhoneNumber": null
+    }
+------------------------------
+
+
+
+
+
+
