@@ -1,0 +1,11 @@
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\obj\Debug\EMRSampleClient.csprojResolveAssemblyReference.cache
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\bin\EMRSampleClient.dll
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\bin\EMRSampleClient.pdb
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\bin\EMRServiceModels.dll
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\bin\RestSharp.dll
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\bin\MongoDB.Bson.dll
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\bin\EMRServiceModels.pdb
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\bin\RestSharp.xml
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\bin\MongoDB.Bson.xml
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\obj\Debug\EMRSampleClient.dll
+C:\Users\workVM\Downloads\EMRSampleClient\EMRSampleClient\obj\Debug\EMRSampleClient.pdb
